@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "wfd-scorer"
+version = "0.1.0"
+description = ""
+authors = ["C. Eric Mathey <emathey@protonmail.com>"]
+readme = "README.md"
+packages = [{include = "wfd_scorer"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+click = "^8.1.7"
+pydantic = "^2.6.0"
+python-dateutil = "^2.8.2"
+
+[tool.poetry.group.dev.dependencies]
+isort = "^5.13.2"
+black = "^24.1.1"
+ipython = "^8.20.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
